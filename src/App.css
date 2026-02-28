@@ -1,42 +1,133 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+.app {
+    display: flex;
+    flex-flow: column wrap;
+    gap: 8px;
+
+    padding: 16px;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+h1 {
+    text-align: center;
+
+    user-select: none;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+h1:active { color: #252525; }
+
+
+
+
+
+/* Controls */
+.todo-controls {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;    
+    flex-wrap: wrap;
+
+    width: 100%;
+
+    margin-top: 24px;
+    border-top: 1px solid #C0C0C0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.todo-controls .controls-group {
+    display: inline-flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 3.2px;
+
+    margin-left: auto;
 }
 
-.card {
-  padding: 2em;
+
+  /* Count */
+.todo-count {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 0 3px;
+
+    font-size: 12px;
 }
 
-.read-the-docs {
-  color: #888;
+
+  /* Sort */
+.todo-sort {
+    display: inline-block;
+
+    padding: 2.4px 1.2px;
+    border: none;
+    border-radius: 2.4px;
+
+    font-size: 12px;
+
+    color: #FFF;
+    background-color: hsl(240, 45%, 75%);
+
+    outline: none;
 }
+
+
+
+
+
+/* Log */
+.todo-log {
+    width: calc(100% - 32px);
+
+    margin: 32px 16px;
+    padding: 8px 32px;
+    border-radius: 8px;
+
+
+    font-size: 32px;
+    text-align: center;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    word-break: break-all;
+
+    color: hsl(240, 65%, 82%);
+    background-color: #505050;
+}
+
+
+
+
+
+/* Alert */
+.todo-alert {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    overflow: hidden;
+
+    max-width: 95vw;
+    max-height: 85vh;
+    position: fixed;
+    left: 50%;
+    bottom: 10%;
+    transform: translateX(-50%);
+
+    padding: 0 18px;
+    border-radius: 3.6px;
+
+    font-size: 18px;
+    line-height: 1.5;
+    letter-spacing: 0.36px;
+    word-spacing: 1.5px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+
+    color: #FFF;
+    background-color: hsla(0, 0%, 0%, 0.75);
+
+    transition: opacity 0.2s ease;
+
+    pointer-events: none;
+    user-select: none;
+}
+
+.todo-alert.open { opacity: 1; }

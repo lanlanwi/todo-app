@@ -1,0 +1,35 @@
+.todo-filter {
+    display: inline-flex;
+    align-content: center;
+    flex-flow: row wrap;
+
+    margin: 8px 0;
+}
+
+.todo-filter .todo-filter-radio {
+    display: flex;
+    align-content: center;
+    flex-wrap: nowrap;
+    gap: 2px;
+    overflow: hidden;
+
+    height: 24px;
+
+    padding: 0 16px;
+    border-bottom: 0.4px solid #808080;
+
+    font-size: 16px;
+
+    color: hsl(240, 18%, 70%);
+    background-color: #303030;
+
+    user-select: none;
+}
+
+.todo-filter .todo-filter-radio [name="Filter"] { display: none; }
+
+.todo-filter .todo-filter-radio:has([name="Filter"]:checked) {
+    color: hsl(240, 60%, 62%);
+    background-color: #EEE;
+    border-color: #EEE;
+}

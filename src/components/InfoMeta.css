@@ -1,0 +1,136 @@
+/* Title */
+#info-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: calc(100% - 40px);
+
+    margin-bottom: 14px;
+
+    font-size: 28px;
+    text-align: center;
+
+    user-select: none;
+}
+
+
+
+/* Input */
+.todo-info-text {
+    display: block;
+
+    width: 100%;
+
+    margin-bottom: 4px;
+    padding: 0 4.8px;
+    border: 1.6px solid #C0C0C0;
+    border-radius: 8px;
+
+    font-family: inherit;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.16px;
+    word-spacing: 1.6px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    word-break: keep-all;
+
+    outline: none;
+}
+
+.todo-info-text:focus { border: 2.4px solid hsl(240, 75%, 70%); }
+
+
+
+/* Edit Button */
+.todo-info-text-edit {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    height: 24px;
+
+    border: 0.6px solid #DDD;
+    border-radius: 6px;
+
+    font-size: 16px;
+
+    color: #FFF;
+    background-color: #AAA;
+
+    transition: background-color 0.2s;
+
+    user-select: none;
+}
+
+.todo-info-text-edit:active { background-color: #808080; }
+
+.todo-info-text-edit.editing { background-color: hsl(240, 50%, 60%); }
+
+.todo-info-text-edit.editing:active { background-color: hsl(240, 50%, 40%); }
+
+
+
+
+
+/* Meta */
+.todo-info-meta {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 1.2px 6px;
+
+    width: 100%;
+
+    margin: 32px 0;
+}
+
+.todo-info-meta dt,
+.todo-info-meta dd {
+    display: block;
+
+    font-size: 12px;
+    line-height: 1;
+    letter-spacing: 0.24px;
+    word-spacing: 1.2px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+
+    color: #444;
+
+    user-select: none;
+}
+
+.todo-info-meta dt {
+    font-size: 14px;
+    font-weight: bold;
+
+    color: hsl(240, 20%, 50%);
+}
+
+.todo-info-meta .meta-spc-top { margin-top: 12px; }
+
+
+
+
+
+/* Delete Button */
+.todo-info-delete {
+    display: inline-block;
+
+    height: 28px;
+
+    padding: 0 28px;
+    border: none;
+    border-radius: 2.8px;
+
+    font-size: 12px;
+
+    color: #FFF;
+    background-color: hsl(0, 80%, 60%);
+
+    user-select: none;
+}
+
+.todo-info-delete:active { background-color: hsl(0, 80%, 40%); }

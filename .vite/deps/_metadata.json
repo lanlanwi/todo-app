@@ -1,0 +1,46 @@
+{
+  "hash": "0a8ed49f",
+  "configHash": "eacabb52",
+  "lockfileHash": "e3b0c442",
+  "browserHash": "7ddc758b",
+  "optimized": {
+    "react": {
+      "src": "../../../../../../../../../data/data/com.termux/files/home/react-project/todo/node_modules/react/index.js",
+      "file": "react.js",
+      "fileHash": "cb90d12c",
+      "needsInterop": true
+    },
+    "react-dom": {
+      "src": "../../../../../../../../../data/data/com.termux/files/home/react-project/todo/node_modules/react-dom/index.js",
+      "file": "react-dom.js",
+      "fileHash": "525e5135",
+      "needsInterop": true
+    },
+    "react/jsx-dev-runtime": {
+      "src": "../../../../../../../../../data/data/com.termux/files/home/react-project/todo/node_modules/react/jsx-dev-runtime.js",
+      "file": "react_jsx-dev-runtime.js",
+      "fileHash": "ce079a5e",
+      "needsInterop": true
+    },
+    "react/jsx-runtime": {
+      "src": "../../../../../../../../../data/data/com.termux/files/home/react-project/todo/node_modules/react/jsx-runtime.js",
+      "file": "react_jsx-runtime.js",
+      "fileHash": "096b11a3",
+      "needsInterop": true
+    },
+    "react-dom/client": {
+      "src": "../../../../../../../../../data/data/com.termux/files/home/react-project/todo/node_modules/react-dom/client.js",
+      "file": "react-dom_client.js",
+      "fileHash": "8eb005cb",
+      "needsInterop": true
+    }
+  },
+  "chunks": {
+    "chunk-PUMHGYJI": {
+      "file": "chunk-PUMHGYJI.js"
+    },
+    "chunk-VSVXEYL4": {
+      "file": "chunk-VSVXEYL4.js"
+    }
+  }
+}
