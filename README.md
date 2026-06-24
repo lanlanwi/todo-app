@@ -32,6 +32,8 @@
 
 ### Metadata Tracking
 
+![Metadata](./screenshots/metadata.png)
+
 Each task stores:
 
 - Created At
@@ -50,11 +52,11 @@ Each task stores:
 
 ## Built With
 
-- React
+- React(Vite)
 - JavaScript
-- Vite
 - CSS
 
 
 
 ## License
+This project is licensed under the MIT License.
