@@ -3,13 +3,8 @@
 
 🗃 [Source Code](https://github.com/lanlanwi/todo-app/tree/main/src)
 
-## Mobile
-![Preview](./screenshots/mobile.png)
+### Mobile
+![Mobile](./screenshots/mobile.png)
 
-
-
-
-
-
-## Desktop
-![Preview](./screenshots/desktop.png)
+### Desktop
+![Desktop](./screenshots/desktop.png)
