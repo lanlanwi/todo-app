@@ -32,8 +32,6 @@
 
 ### 🗒 Metadata Tracking
 
-![Metadata](./screenshots/info.png)
-
 Each task stores:
 
 - Created At
@@ -41,6 +39,8 @@ Each task stores:
 - Completed At
 - Status
 - Last Action
+
+![Metadata](./screenshots/info.png)
 
 ### 👍 User Experience
 
