@@ -3,4 +3,5 @@
 
 🗃 [Source Code](https://github.com/lanlanwi/todo-app/tree/main/src)
 
-![Preview](./screenshots/mobile.jpg)
+![Preview](./screenshots/mobile.png)
+![Preview](./screenshots/desktop.png)
