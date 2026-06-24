@@ -32,7 +32,7 @@
 
 ### Metadata Tracking
 
-![Metadata](./screenshots/metadata.png)
+![Metadata](./screenshots/info.png)
 
 Each task stores:
 
