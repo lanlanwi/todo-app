@@ -1,0 +1,180 @@
+.todo-list {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 0.5em;    
+
+    width: 100%;
+
+    padding: 0.25em;    
+
+    font-size: 1rem;
+}
+
+.todo-list * { font-size: inherit; }
+
+
+
+
+
+/* item */
+.todo-item {
+    list-style: none;
+
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    overflow: hidden;
+
+    width: 100%;
+    height: 2.5em;
+
+    border: 0.1em solid #C0C0C0;
+    border-radius: 0.2em;
+
+    background-color: #EEE;
+}
+
+.todo-item:has(.ti-label:active) { background-color: #E0E0E0; }
+
+.todo-item:has(input:focus-visible) {
+    outline: 0.25em solid hsl(240, 60%, 65%);
+    outline-offset: -0.1em;
+}
+
+
+
+
+
+/* Label */
+.todo-item .ti-label {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    align-items: end;
+    column-gap: 0.25em;
+
+    width: 100%;
+    height: 100%;
+
+    padding-left: 0.25em;
+
+    cursor: pointer;
+}
+
+
+  /* Check Box */
+.ti-label .ti-checkbox {
+    display: block;
+    grid-column: 1 / 2;
+    grid-row: 1 / 5;
+
+    width: 1.5em;
+    height: 1.5em;
+    position: relative;
+
+    margin-block: auto;
+    border: 0.125em solid #C0C0C0;
+    border-radius: 0.125em;
+}
+
+.ti-label input[type="checkbox"] {
+    opacity: 0;
+
+    width: 1px;
+    height: 1px;
+    position: absolute;
+}
+
+.ti-label:has(input[type="checkbox"]:checked) .ti-checkbox {
+    border: 0.1em solid #808080;
+    border-radius: 0.2em;
+}
+
+.ti-label:has(input[type="checkbox"]:checked) .ti-checkbox::before {
+    content: "";
+
+    width: 1em;
+    height: 1em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    border-radius: 0.2em;
+
+    background-color: hsl(240, 65%, 68%);
+}
+
+
+  /* Date */
+.ti-label .ti-date {
+    display: block;
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    overflow: hidden;
+
+    width: 100%;
+    height: 100%;
+
+    font-size: 0.5em;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+
+    color: #252525;
+
+    user-select: none;
+}
+
+
+  /* Title */
+.ti-label .ti-title {
+    display: block;
+    grid-column: 2 / 3;
+    grid-row: 2 / 5;
+    overflow: hidden;
+
+    width: 100%;
+    height: auto;
+
+    margin-block: auto;
+
+    font-size: 1.125em;
+    line-height: 1.5;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+
+    color: #252525;
+}
+
+.todo-item .ti-title::selection { color: hsl(0, 90%, 60%); }
+
+
+
+
+
+/* Info Button */
+.todo-item .ti-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column wrap;
+    gap: 10%;
+    overflow: hidden;
+
+    width: 2em;
+    height: 100%;
+
+    border: none;
+}
+
+.todo-item .ti-info:active { background-color: #DDD; }
+
+.todo-item .ti-info svg { transition: transform 0.2s ease; }
+
+.todo-item .ti-info:active svg { transform: scale(0.75); }
+
+.todo-item .ti-info:focus-visible {
+  outline: 0.1em solid hsl(240, 60%, 65%);
+  outline-offset: -0.1em;
+}

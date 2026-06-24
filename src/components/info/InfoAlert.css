@@ -1,0 +1,52 @@
+/* Poof */
+.poof {
+    width: 100%;
+
+    margin: 0.5em 0 1.5em;
+
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+
+    user-select: none;
+}
+
+
+
+
+
+/* Button */
+.info-alert-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    padding-inline: 2em;
+    border: none;
+    border-radius: 0.2em;
+
+    font-size: 0.875em;
+    line-height: 2;
+
+    color: #000;
+    background-color: #EEE;
+
+    transition: transform 0.2s ease;
+
+    user-select: none;
+}
+
+.info-alert-btn:active {
+    transform: scale(0.9);
+
+    background-color: #CCC;
+}
+
+.info-alert-btn.delete {
+    color: #FFF;
+    background-color: hsl(0, 80%, 60%);
+}
+
+.info-alert-btn.delete:active { background-color: hsl(0, 80%, 40%); }
+
+.info-alert-btn:focus-visible { outline: 0.2em solid #AAA; }

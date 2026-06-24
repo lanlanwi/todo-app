@@ -1,0 +1,106 @@
+/* Title */
+.info-title {
+    width: 100%;
+
+    margin: 0.25em 0 0.5em;
+
+    font-size: 1.75em;
+    font-weight: bold;
+    line-height: 1;
+    text-align: center;
+
+    user-select: none;
+}
+
+
+
+
+
+/* Meta */
+.info-meta {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: end;
+    gap: 0.1em 0.5em;
+
+    width: 100%;
+
+    margin-block: 2em;
+
+    font-size: 0.75em;
+}
+
+.info-meta dt,
+.info-meta dd {
+    letter-spacing: 0.02em;
+    word-spacing: 0.1em;
+    overflow-wrap: break-word;
+
+    user-select: none;
+}
+
+.info-meta dt {
+    font-size: 1.2em;
+    font-weight: bold;
+    line-height: 1;
+
+    color: hsl(240, 20%, 50%);
+}
+
+.info-meta dd {
+    line-height: 1.2;
+
+    color: #444;
+}
+
+.info-meta .meta-spacer { margin-top: 1em; }
+
+.info-meta .bold {
+    font-weight: bold;
+
+    color: #000;
+}
+
+
+
+
+
+/* Delete Button */
+.info-delete-btn {
+    display: inline-block;
+
+    padding-inline: 2em;
+    border: none;
+    border-radius: 0.2em;
+
+    font-size: 0.875em;
+    line-height: 2;
+
+    color: #FFF;
+    background-color: hsl(0, 80%, 60%);
+
+    transition: transform 0.2s ease;
+
+    user-select: none;
+}
+
+.info-delete-btn:active {
+    transform: scale(0.95);
+
+    background-color: hsl(0, 80%, 40%);
+}
+
+.info-delete-btn:focus-visible { outline: 0.2em solid #AAA; }
+
+
+
+
+
+.missing {
+    font-size: 1.25em;
+    font-weight: bold;
+    line-height: 3;
+    text-align: center;
+
+    color: #555;
+}

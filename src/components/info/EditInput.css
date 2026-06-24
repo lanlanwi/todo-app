@@ -1,0 +1,62 @@
+.info-edit {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.25em 0.5em;
+
+    width: 100%;
+
+    font-size: 1em;
+}
+
+
+
+
+
+/* Input */
+.info-edit-input {
+    display: block;
+
+    width: 100%;
+
+    padding: 0.25em;
+    border: 0.1em solid #C0C0C0;
+    border-radius: 0.25em;
+
+    font-size: inherit;
+    line-height: 1.5;
+}
+
+.info-edit-input:focus-visible {
+    outline: 0.15em solid hsl(240, 75%, 70%);
+    outline-offset: -0.1em;
+}
+
+
+
+
+
+/* Buttons */
+.info-edit button {
+    flex: 1;
+
+    padding: 0.1em 0.5em;
+    border: none;
+    border-radius: 0.2em;
+
+    color: #FFF;
+    background-color: hsl(240, 45%, 75%);
+
+    font-size: 0.875em;
+    line-height: 1.5;
+
+    transition: transform 0.2s ease;
+}
+
+.info-edit button:active {
+    transform: scale(0.95);
+
+    background-color: hsl(240, 50%, 65%);
+}
+
+.info-edit button:focus-visible { outline: 0.125em solid #808080; }

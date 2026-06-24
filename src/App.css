@@ -1,0 +1,90 @@
+h1 {
+    font-size: 2rem;
+    text-align: center;
+
+    user-select: none;
+}
+
+
+
+
+
+/* Controls */
+.todo-controls {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;    
+    flex-wrap: wrap;
+    column-gap: 0.5em;
+
+    width: 100%;
+
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+    border-top: min(0.3vw, 0.3vh) solid #C0C0C0;
+}
+
+
+
+
+
+/* Not Found */
+.todo-not-found {
+    display: inline-flex;
+    
+    max-width: calc(100% - 1em);
+
+    margin: 1em 0.5em;
+    padding: 0.25em 1em;
+    border-radius: 0.25em;
+
+    font-size: 2rem;
+    overflow-wrap: break-word;
+    word-break: break-all;
+
+    color: hsl(240, 65%, 82%);
+    background-color: #505050;
+
+    user-select: none;
+}
+
+
+
+
+
+/* Toast Notification */
+.todo-alert {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    z-index: 10000;
+    overflow: hidden;
+
+    max-width: 90vw;
+    max-height: 85vh;
+    position: fixed;
+    left: 50%;
+    bottom: 10%;
+    transform: translateX(-50%);
+
+    padding: 0.5em 1em;
+    border-radius: 0.2em;
+
+    font-size: 1rem;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    word-spacing: 0.1em;
+    overflow-wrap: break-word;
+    word-break: break-all;
+
+    color: #FFF;
+    background-color: hsla(0, 0%, 0%, 0.75);
+
+    transition: opacity 0.2s ease;
+
+    pointer-events: none;
+    user-select: none;
+}
+
+.todo-alert.open { opacity: 1; }

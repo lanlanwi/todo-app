@@ -1,0 +1,26 @@
+.todo-sort {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+
+    overflow: hidden;
+
+    height: 2em;
+
+    padding: 0.2em 0.5em;
+    border: none;
+    border-radius: 0.2em;
+
+    font-size: 0.75rem;
+
+    color: #FFF;
+    background-color: hsl(240, 45%, 75%);
+
+    user-select: none;
+
+    outline: none;
+}
+
+.todo-sort:active { background-color: hsl(240, 60%, 65%); }
+
+.todo-sort:focus-visible { outline: 0.125em solid #FFF; }
