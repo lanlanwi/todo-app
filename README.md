@@ -1,22 +1,22 @@
 # Todo App
 🚀 [Live Demo](https://lanlanwi-todo-app.pages.dev/)
 
-🗃 [Source Code](https://github.com/lanlanwi/todo-app/tree/main/src)
+🗃 [Source Code](https://github.com/lanlanwi/todo-app)
 
 
-## Screenshot
+## 📸 Screenshot
 
-### Mobile
+### 📱 Mobile
 ![Mobile](./screenshots/mobile.png)
 
-### Desktop
+### 💻 Desktop
 ![Desktop](./screenshots/desktop.png)
 
 
 
-## Features
+## ⚙️ Features
 
-### Task Management
+### 🔧 Task Management
 
 - Create tasks
 - Edit tasks
@@ -24,13 +24,13 @@
 - Mark tasks as completed
 - View task status
 
-### Search & Organization
+### 🔍 Search & Organization
 
 - Search tasks by keyword
 - Filter tasks by status
 - Sort tasks dynamically
 
-### Metadata Tracking
+### 🗒 Metadata Tracking
 
 ![Metadata](./screenshots/info.png)
 
@@ -42,7 +42,7 @@ Each task stores:
 - Status
 - Last Action
 
-### User Experience
+### 👍 User Experience
 
 - Responsive design for mobile and desktop devices
 - Clean and minimal user interface
@@ -50,13 +50,30 @@ Each task stores:
 
 
 
-## Built With
+## 🔩 Built With
 
-- React(Vite)
-- JavaScript
-- CSS
+- React
+- Vite
+- JavaScript (ES6+)
+- CSS3
+- LocalStorage API
 
 
 
-## License
+## 📡 Deployment
+Hosted on Cloudflare Pages
+
+
+
+## 👨‍🎓 What I Learned
+
+- State management with React Hooks
+- Data persistence using LocalStorage
+- Search, filtering, and sorting logic
+- Responsive UI design
+- Component-based architecture
+
+
+
+## 🔒 License
 This project is licensed under the MIT License.
