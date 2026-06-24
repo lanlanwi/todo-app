@@ -1,4 +1,6 @@
 # Todo App
-[Open Todo App](https://lanlanwi-todo-app.pages.dev/)
+🚀 [Live Demo](https://lanlanwi-todo-app.pages.dev/)
 
-## Live Demo
+🗃 [Source Code](https://github.com/lanlanwi/todo-app/tree/main/src)
+
+![Preview](./screenshots/mobile.jpg)
