@@ -1,0 +1,48 @@
+{
+  "name": "react-scss-ts",
+  "version": "1.0.0",
+  "private": true,
+  "description": "React + SCSS + TypeScript template",
+  "license": "MIT",
+  "author": "Lanlanwi",
+  "type": "module",
+  "scripts": {
+    "clean": "rimraf dev dist",
+    "dev": "vite",
+    "build": "npm run check && vite build",
+    "preview": "vite preview",
+    "format": "prettier . --write",
+    "lint": "eslint .",
+    "lint:css": "stylelint \"src/**/*.scss\"",
+    "lint:css:fix": "stylelint \"src/**/*.scss\" --fix",
+    "typecheck": "npx tsc -b --watch",
+    "check": "npm run lint && npm run lint:css && npx tsc -b"
+  },
+  "dependencies": {
+    "@radix-ui/react-dialog": "^1.1.23",
+    "noctia": "^1.2.0",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@types/node": "^24.10.1",
+    "@types/react": "^19.2.7",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^5.1.1",
+    "autoprefixer": "^10.5.4",
+    "eslint": "^10.8.0",
+    "eslint-plugin-react-hooks": "^7.0.1",
+    "eslint-plugin-react-refresh": "^0.4.24",
+    "globals": "^17.9.0",
+    "postcss": "^8.5.26",
+    "prettier": "^3.9.6",
+    "rimraf": "^6.x",
+    "sass": "^1.102.0",
+    "stylelint": "^17.14.1",
+    "stylelint-config-standard-scss": "^17.0.0",
+    "typescript": "^6.0.3",
+    "typescript-eslint": "^8.66.0",
+    "vite": "^7.3.6"
+  }
+}

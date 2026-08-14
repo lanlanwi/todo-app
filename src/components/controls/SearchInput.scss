@@ -1,0 +1,32 @@
+.todo-search {
+  display: block;
+
+  width: 100%;
+
+  margin-block: 0.5em;
+  padding: 0.25em;
+  border: none;
+  border-top: 0.1em solid #333333;
+  border-bottom: 0.1em solid #333333;
+
+  font-size: 1.25rem;
+  line-height: 1.5em;
+
+  color: #e0e0e0;
+  background-color: #444444;
+
+  outline: none;
+
+  &:focus {
+    background-color: #555555;
+  }
+
+  &::placeholder {
+    color: #aaaaaa;
+  }
+
+  &::selection {
+    color: #444444;
+    background-color: #e0e0e0;
+  }
+}

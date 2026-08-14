@@ -1,0 +1,50 @@
+.poof {
+  width: 100%;
+
+  margin: 0.5em 0 1.5em;
+
+  font-size: 1.5em;
+  font-weight: bold;
+  text-align: center;
+
+  user-select: none;
+}
+
+.info-alert-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding-inline: 2em;
+  border: none;
+  border-radius: 0.2em;
+
+  font-size: 0.875em;
+  line-height: 2;
+
+  color: #000000;
+  background-color: #eeeeee;
+
+  transition: transform 0.2s ease;
+
+  user-select: none;
+
+  &:active {
+    transform: scale(0.9);
+
+    background-color: #cccccc;
+  }
+
+  &.delete {
+    color: #ffffff;
+    background-color: hsl(0deg 80% 60%);
+
+    &:active {
+      background-color: hsl(0deg 80% 40%);
+    }
+  }
+
+  &:focus-visible {
+    outline: 0.2em solid #aaaaaa;
+  }
+}

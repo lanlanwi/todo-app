@@ -1,0 +1,28 @@
+.todo-sort {
+  appearance: none;
+
+  overflow: hidden;
+
+  height: 2em;
+
+  padding: 0.2em 0.5em;
+  border: none;
+  border-radius: 0.2em;
+
+  font-size: 0.75rem;
+
+  color: #ffffff;
+  background-color: hsl(240deg 45% 75%);
+
+  user-select: none;
+
+  outline: none;
+
+  &:active {
+    background-color: hsl(240deg 60% 65%);
+  }
+
+  &:focus-visible {
+    outline: 0.125em solid #ffffff;
+  }
+}
