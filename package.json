@@ -1,8 +1,8 @@
 {
-  "name": "react-scss-ts",
+  "name": "todo-app",
   "version": "1.0.0",
   "private": true,
-  "description": "React + SCSS + TypeScript template",
+  "description": "Simple todo app",
   "license": "MIT",
   "author": "Lanlanwi",
   "type": "module",
