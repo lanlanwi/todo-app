@@ -1,3 +1,4 @@
+/* Info Title */
 .info-title {
   width: 100%;
 
@@ -11,6 +12,7 @@
   user-select: none;
 }
 
+/* Info Meta */
 .info-meta {
   display: grid;
   grid-template-columns: 1fr auto;
@@ -57,6 +59,7 @@
   }
 }
 
+/* Info Delete Button */
 .info-delete-btn {
   display: inline-block;
 
@@ -85,6 +88,7 @@
   }
 }
 
+/* Missing Info Data */
 .missing {
   font-size: 1.25em;
   font-weight: bold;

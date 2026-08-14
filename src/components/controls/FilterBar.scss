@@ -1,5 +1,6 @@
+/* Filter */
 .todo-filter {
-  display: inline-flex;
+  display: flex;
   align-items: center;
 
   width: 100%;
@@ -66,6 +67,7 @@
   }
 }
 
+/* Count */
 .todo-count {
   display: inline-flex;
   align-items: center;

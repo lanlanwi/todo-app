@@ -33,22 +33,22 @@
       outline: 0.125em solid #808080;
     }
   }
-}
 
-.info-edit-input {
-  display: block;
+  & .info-edit-input {
+    display: block;
 
-  width: 100%;
+    width: 100%;
 
-  padding: 0.25em;
-  border: 0.1em solid #c0c0c0;
-  border-radius: 0.25em;
+    padding: 0.25em;
+    border: 0.1em solid #c0c0c0;
+    border-radius: 0.25em;
 
-  font-size: inherit;
-  line-height: 1.5;
+    font-size: inherit;
+    line-height: 1.5;
 
-  &:focus-visible {
-    outline: 0.15em solid hsl(240deg 75% 70%);
-    outline-offset: -0.1em;
+    &:focus-visible {
+      outline: 0.15em solid hsl(240deg 75% 70%);
+      outline-offset: -0.1em;
+    }
   }
 }

@@ -1,3 +1,4 @@
+/* List */
 .todo-list {
   display: flex;
   justify-content: center;
@@ -11,11 +12,7 @@
   font-size: 1rem;
 }
 
-.todo-list * {
-  font-size: inherit;
-}
-
-/* item */
+/* Item */
 .todo-item {
   list-style: none;
 
@@ -30,148 +27,151 @@
   border: 0.1em solid #c0c0c0;
   border-radius: 0.2em;
 
+  font-size: 1em;
+
   background-color: #eeeeee;
-}
 
-.todo-item:has(.ti-label:active) {
-  background-color: #e0e0e0;
-}
+  &:has(.ti-label:active) {
+    background-color: #e0e0e0;
+  }
 
-.todo-item:has(input:focus-visible) {
-  outline: 0.25em solid hsl(240deg 60% 65%);
-  outline-offset: -0.1em;
-}
+  &:has(input:focus-visible) {
+    outline: 0.25em solid hsl(240deg 60% 65%);
+    outline-offset: -0.1em;
+  }
 
-/* Label */
-.todo-item .ti-label {
-  display: grid;
-  grid-template-columns: auto 1fr;
-  grid-template-rows: repeat(4, 1fr);
-  align-items: end;
-  column-gap: 0.25em;
+  & .ti-label {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    align-items: end;
+    column-gap: 0.25em;
 
-  width: 100%;
-  height: 100%;
+    width: 100%;
+    height: 100%;
 
-  padding-left: 0.25em;
+    padding-left: 0.25em;
 
-  cursor: pointer;
-}
+    font-size: 1em;
 
-/* Check Box */
-.ti-label .ti-checkbox {
-  display: block;
-  grid-column: 1 / 2;
-  grid-row: 1 / 5;
+    cursor: pointer;
 
-  width: 1.5em;
-  height: 1.5em;
-  position: relative;
+    & .ti-checkbox {
+      display: block;
+      grid-column: 1 / 2;
+      grid-row: 1 / 5;
 
-  margin-block: auto;
-  border: 0.125em solid #c0c0c0;
-  border-radius: 0.125em;
-}
+      width: 1.5em;
+      height: 1.5em;
+      position: relative;
 
-.ti-label input[type='checkbox'] {
-  opacity: 0;
+      margin-block: auto;
+      border: 0.125em solid #c0c0c0;
+      border-radius: 0.125em;
 
-  width: 1px;
-  height: 1px;
-  position: absolute;
-}
+      font-size: 1em;
+    }
 
-.ti-label:has(input[type='checkbox']:checked) .ti-checkbox {
-  border: 0.1em solid #808080;
-  border-radius: 0.2em;
-}
+    & input[type='checkbox'] {
+      opacity: 0;
 
-.ti-label:has(input[type='checkbox']:checked) .ti-checkbox::before {
-  content: '';
+      width: 1px;
+      height: 1px;
+      position: absolute;
+    }
 
-  width: 1em;
-  height: 1em;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+    &:has(input[type='checkbox']:checked) .ti-checkbox {
+      border: 0.1em solid #808080;
+      border-radius: 0.2em;
 
-  border-radius: 0.2em;
+      &::before {
+        content: '';
 
-  background-color: hsl(240deg 65% 68%);
-}
+        width: 1em;
+        height: 1em;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
 
-/* Date */
-.ti-label .ti-date {
-  display: block;
-  grid-column: 2 / 3;
-  grid-row: 1 / 2;
-  overflow: hidden;
+        border-radius: 0.2em;
 
-  width: 100%;
-  height: 100%;
+        background-color: hsl(240deg 65% 68%);
+      }
+    }
 
-  font-size: 0.5em;
-  white-space: nowrap;
-  text-overflow: ellipsis;
+    & .ti-date {
+      display: block;
+      grid-column: 2 / 3;
+      grid-row: 1 / 2;
+      overflow: hidden;
 
-  color: #252525;
+      width: 100%;
+      height: 100%;
 
-  user-select: none;
-}
+      font-size: 0.5em;
+      white-space: nowrap;
+      text-overflow: ellipsis;
 
-/* Title */
-.ti-label .ti-title {
-  display: block;
-  grid-column: 2 / 3;
-  grid-row: 2 / 5;
-  overflow: hidden;
+      color: #252525;
 
-  width: 100%;
-  height: auto;
+      user-select: none;
+    }
+  }
 
-  margin-block: auto;
+  & .ti-title {
+    display: block;
+    grid-column: 2 / 3;
+    grid-row: 2 / 5;
+    overflow: hidden;
 
-  font-size: 1.125em;
-  line-height: 1.5;
-  white-space: nowrap;
-  text-overflow: ellipsis;
+    width: 100%;
+    height: auto;
 
-  color: #252525;
-}
+    margin-block: auto;
 
-.todo-item .ti-title::selection {
-  color: hsl(0deg 90% 60%);
-}
+    font-size: 1.125em;
+    line-height: 1.5;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 
-/* Info Button */
-.todo-item .ti-info {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-flow: column wrap;
-  gap: 10%;
-  overflow: hidden;
+    color: #252525;
 
-  width: 2em;
-  height: 100%;
+    &::selection {
+      color: hsl(0deg 90% 60%);
+    }
+  }
 
-  border: none;
-}
+  & .ti-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column wrap;
+    gap: 10%;
+    overflow: hidden;
 
-.todo-item .ti-info:active {
-  background-color: #dddddd;
-}
+    width: 2em;
+    height: 100%;
 
-.todo-item .ti-info svg {
-  transition: transform 0.2s ease;
-}
+    border: none;
 
-.todo-item .ti-info:active svg {
-  transform: scale(0.75);
-}
+    font-size: 1em;
 
-.todo-item .ti-info:focus-visible {
-  outline: 0.1em solid hsl(240deg 60% 65%);
-  outline-offset: -0.1em;
+    & svg {
+      transition: transform 0.2s ease;
+    }
+
+    &:active {
+      background-color: #dddddd;
+
+      & svg {
+        transform: scale(0.75);
+      }
+    }
+
+    &:focus-visible {
+      outline: 0.1em solid hsl(240deg 60% 65%);
+      outline-offset: -0.1em;
+    }
+  }
 }
