@@ -53,7 +53,7 @@ Each task stores:
 - React
 - TypeScript
 - Vite
-- CSS3
+- SCSS
 - LocalStorage API
 
 ## 📡 Deployment
