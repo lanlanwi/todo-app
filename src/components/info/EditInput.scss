@@ -8,7 +8,7 @@
 
   font-size: 1em;
 
-  & button {
+  button {
     flex: 1;
 
     padding: 0.1em 0.5em;
@@ -34,7 +34,7 @@
     }
   }
 
-  & .info-edit-input {
+  .info-edit-input {
     display: block;
 
     width: 100%;

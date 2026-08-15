@@ -40,7 +40,7 @@
     outline-offset: -0.1em;
   }
 
-  & .ti-label {
+  .ti-label {
     display: grid;
     grid-template-columns: auto 1fr;
     grid-template-rows: repeat(4, 1fr);
@@ -56,7 +56,7 @@
 
     cursor: pointer;
 
-    & .ti-checkbox {
+    .ti-checkbox {
       display: block;
       grid-column: 1 / 2;
       grid-row: 1 / 5;
@@ -72,7 +72,7 @@
       font-size: 1em;
     }
 
-    & input[type='checkbox'] {
+    input[type='checkbox'] {
       opacity: 0;
 
       width: 1px;
@@ -100,7 +100,7 @@
       }
     }
 
-    & .ti-date {
+    .ti-date {
       display: block;
       grid-column: 2 / 3;
       grid-row: 1 / 2;
@@ -119,7 +119,7 @@
     }
   }
 
-  & .ti-title {
+  .ti-title {
     display: block;
     grid-column: 2 / 3;
     grid-row: 2 / 5;
@@ -142,7 +142,7 @@
     }
   }
 
-  & .ti-info {
+  .ti-info {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -157,14 +157,14 @@
 
     font-size: 1em;
 
-    & svg {
+    svg {
       transition: transform 0.2s ease;
     }
 
     &:active {
       background-color: #dddddd;
 
-      & svg {
+      svg {
         transform: scale(0.75);
       }
     }

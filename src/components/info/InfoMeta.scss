@@ -34,7 +34,7 @@
     user-select: none;
   }
 
-  & dt {
+  dt {
     font-size: 1.2em;
     font-weight: bold;
     line-height: 1;
@@ -42,17 +42,17 @@
     color: hsl(240deg 20% 50%);
   }
 
-  & dd {
+  dd {
     line-height: 1.2;
 
     color: #444444;
   }
 
-  & .meta-spacer {
+  .meta-spacer {
     margin-top: 1em;
   }
 
-  & .bold {
+  .bold {
     font-weight: bold;
 
     color: #000000;

@@ -11,7 +11,7 @@
 
   font-size: 1rem;
 
-  & label {
+  label {
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -50,7 +50,7 @@
     }
   }
 
-  & input[type='radio'] {
+  input[type='radio'] {
     opacity: 0;
 
     width: 1px;
